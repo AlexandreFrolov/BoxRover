@@ -9,6 +9,7 @@
 Книга адресована школьникам и студентам, а также всем, кто интересуется роботами и робототехникой.
 
 Обсудить книгу и связаться с автором можно в группе Facebook https://www.facebook.com/groups/539933346894981/.
+Купить на Литресе: https://www.litres.ru/aleksandr-frolov-198/robototehnika-prakticheskoe-vvedenie-dlya-detey-i-vzr/
 
 Оглавление книги
 
