@@ -11,7 +11,7 @@
 Обсудить книгу и связаться с автором можно в группе Facebook https://www.facebook.com/groups/539933346894981/.
 Купить на Литресе: https://www.litres.ru/aleksandr-frolov-198/robototehnika-prakticheskoe-vvedenie-dlya-detey-i-vzr/
 
-Оглавление книги
+# Оглавление книги
 
 1. Запускаем микроконтроллер micro:bit.
 2. Управляем светодиодами.
