@@ -12,8 +12,6 @@ GPIO.setwarnings(False)
 
 M0 = 22
 M1 = 27
-CFG_CMD = [b'\xC1\xC1\xC1',
-		   b'\xC3\xC3\xC3']
 
 GPIO.setup(M0,GPIO.OUT)
 GPIO.setup(M1,GPIO.OUT)
@@ -31,7 +29,7 @@ ser.flushInput()
 
 try :
     if ser.isOpen() :
-        ser.write(CFG_CMD[0])
+        ser.write(b'\xC1\xC1\xC1')
 
 except :
     if ser.isOpen() :
@@ -40,6 +38,4 @@ except :
 
 received_data = ser.read(6)
 sleep(0.03)
-#data_left = ser.inWaiting()
-#received_data += ser.read(data_left)
 print('E32 config: {}'.format(received_data.encode('hex')))
