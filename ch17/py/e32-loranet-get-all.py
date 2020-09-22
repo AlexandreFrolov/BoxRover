@@ -30,13 +30,11 @@ ser.flushInput()
 try :
     if ser.isOpen() :
         ser.write(NODE_ADDR_CHAN[0])
-        ser.write('getWeather \n'.encode())
-
+        ser.write('getData \n'.encode())
 except :
     if ser.isOpen() :
         ser.close()
 	GPIO.cleanup()
-
 #received_data = ser.read()
 received_data = ser.readline()
 
