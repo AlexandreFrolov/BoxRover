@@ -7,10 +7,10 @@ import time
 import sys
 from time import sleep
 
-NODE_CFG = [b'\xC2\x00\x0B\x1A\x0F\xC7',
-            b'\xC2\x00\x0C\x1A\x0F\xC7',
-            b'\xC2\x00\x0D\x1A\x0F\xC7',
-            b'\xC2\x00\x0E\x1A\x0F\xC7']
+NODE_CFG = [b'\xC0\x00\x0B\x1A\x0F\xC7',
+            b'\xC0\x00\x0C\x1A\x0F\xC7',
+            b'\xC0\x00\x0D\x1A\x0F\xC7',
+            b'\xC0\x00\x0E\x1A\x0F\xC7']
 
 if len(sys.argv) != 2 or int(sys.argv[1]) < 1 or int(sys.argv[1]) > 4 :
     print("Please enter node id (1, 2, 3, 4)")
