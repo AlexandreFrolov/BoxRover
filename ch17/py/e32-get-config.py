@@ -38,4 +38,5 @@ except :
 
 received_data = ser.read(6)
 sleep(0.03)
-print('E32 module config: {}'.format(received_data.encode('hex')))
+print('E32 module config:')
+print('{}'.format(received_data.encode('hex')))
