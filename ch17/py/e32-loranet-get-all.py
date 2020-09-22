@@ -55,3 +55,18 @@ sleep(0.03)
 data_left = ser.inWaiting()             #check for remaining byte
 received_data += ser.read(data_left)
 print (received_data.rstrip("\n"))                   #print received data
+
+
+try :
+    if ser.isOpen() :
+        ser.write(NODE_ADDR_CHAN[2])
+        ser.write('getData \n'.encode())
+except :
+    if ser.isOpen() :
+        ser.close()
+	GPIO.cleanup()
+received_data = ser.readline()
+sleep(0.03)
+data_left = ser.inWaiting()             #check for remaining byte
+received_data += ser.read(data_left)
+print (received_data.rstrip("\n"))                   #print received data
