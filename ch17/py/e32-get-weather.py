@@ -29,7 +29,7 @@ ser.flushInput()
 
 try :
     if ser.isOpen() :
-        ser.write('getWeather \n')
+        ser.write('getWeather \n'.encode())
 
 except :
     if ser.isOpen() :
