@@ -8,7 +8,7 @@ import sys
 from time import sleep
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
+#GPIO.setwarnings(False)
 
 M0 = 22
 M1 = 27
@@ -40,3 +40,4 @@ received_data = ser.read(6)
 sleep(0.03)
 print('E32 module config:')
 print('{}'.format(received_data.encode('hex')))
+GPIO.cleanup()
